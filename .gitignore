@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Suricata runtime logs
+*.log
+eve.json
+fast.log
+
+# OS/editor files
+.DS_Store
+*.swp

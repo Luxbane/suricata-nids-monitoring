@@ -1,0 +1,17 @@
+[Unit]
+Description=Suricata Prometheus Exporter
+After=network-online.target suricata.service
+Wants=network-online.target
+Requires=suricata.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/suricata-exporter/suricata_exporter.py
+Restart=always
+RestartSec=5
+
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

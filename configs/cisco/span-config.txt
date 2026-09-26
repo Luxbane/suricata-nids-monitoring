@@ -1,0 +1,7 @@
+! SW1 - SPAN configuration
+!
+! Source: Kali on Gi0/1
+! Destination: Monitoring ens4 on Gi1/0
+!
+monitor session 1 source interface Gi0/1 both
+monitor session 1 destination interface Gi1/0
